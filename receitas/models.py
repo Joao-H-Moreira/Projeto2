@@ -15,5 +15,5 @@ class Receita(models.Model):
     class Meta :
         verbose_name = "Receita"
         verbose_name_plural = "Receitas"
-        ordering = ['-create_at']
+        ordering = ['-created_at']
 
