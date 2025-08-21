@@ -1,5 +1,6 @@
-from django.shortcuts import render
-from django.http import Http404
+from django.shortcuts import render, get_list_or_404
+from .models import Receita
+
 
 # receitas/views.py 
 
@@ -8,9 +9,12 @@ def home(request):
 
 def receita_detail(request, id):
 
+    receita = get_list_or_404(Receita, pk=id)
+
     context = {
-        'receita_id' : id,
-        'receita_title' : f'Receita detalhada {id}',
-        'receita_desciption' : f'Esta é a descrição detalhada da receita com ID {id}.'
+        'receita' : receita,
+
     }
+
+    return render(request, 'receitas/receita_detail.html', context)
     
