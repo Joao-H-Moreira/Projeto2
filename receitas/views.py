@@ -3,7 +3,8 @@ from .models import Receita
 
 # receitas/views.py 
 def home(request): 
-    return render(request, 'receitas/home.html') 
+    receitas = Receita.objects.all()
+    return render(request, 'receitas/home.html', {'receitas':receitas}) 
 
 def receita_detail(request, id):
     receita = get_object_or_404(Receita, pk=id)
