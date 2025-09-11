@@ -25,6 +25,12 @@ Delivery Network). -->
 a página terá um fundo cinza claro e texto cinza escuro.-->
     <!-- Cabeçalho da Página -->
     <header class="bg-gray-900 text-white p-6 shadow-lg rounded-b-lg">
+            <nav class="ml-auto relative z-10 flex space-x-4">
+                <a href="{% url 'home' %}" class="text-gray-300 hover:text-white mx-2"> 🏡 Home</a>
+                <!-- <a href="{% url 'home' %}?categoria=comida" class="text-gray-300 hover:text-white mx-2">Comida</a>
+                <a href="{% url 'home' %}?categoria=sobremesa" class="text-gray-300 hover:text-white mx-2">Sobremesa</a>
+                <a href="{% url 'home' %}?categoria=drink" class="text-gray-300 hover:text-white mx-2">Drink</a> -->
+            </nav>
         <div class="container mx-auto relative flex flex-col sm:flex-row items-center justify-center">
             <!-- Alterado para 'justify-center' para centralizar o conteúdo -->
             <!-- Agrupamento para o Ícone e Título (Centralizado) -->
@@ -39,13 +45,6 @@ a página terá um fundo cinza claro e texto cinza escuro.-->
                 </h1>
             </div>
             </div>
-
-            <nav class="ml-auto relative z-10 flex space-x-4">
-                <a href="{% url 'home' %}" class="text-gray-300 hover:text-white mx-2">Home</a>
-                <!-- <a href="{% url 'home' %}?categoria=comida" class="text-gray-300 hover:text-white mx-2">Comida</a>
-                <a href="{% url 'home' %}?categoria=sobremesa" class="text-gray-300 hover:text-white mx-2">Sobremesa</a>
-                <a href="{% url 'home' %}?categoria=drink" class="text-gray-300 hover:text-white mx-2">Drink</a> -->
-            </nav>
         </div>
     </header>
     <main class="container mx-auto p-6 mt-8 bg-white rounded-lg shadow-md">
@@ -54,7 +53,7 @@ a página terá um fundo cinza claro e texto cinza escuro.-->
     </main>
     <!-- Rodapé da página -->
     <footer class="mt-12 p-6 text-center text-gray-600">
-        <p>&copy; 2025 Minhas Receitas. Todos os direitos reservados a Emmanuel.</p>
+        <p>&copy; 2025 Minhas Receitas. Todos os direitos reservados a João.</p>
     </footer>
 </body>
 
