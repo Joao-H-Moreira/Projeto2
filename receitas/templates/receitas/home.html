@@ -5,7 +5,11 @@ a página terá um fundo cinza claro e texto cinza escuro.-->
 {% block title %}Home - Minhas Receitas{% endblock %}
 
 {% block content %}
-
+<nav class="ml-auto relative z-10 flex space-x-4">
+    <a href="{% url 'home' %}?categoria=comida" class="text-gray-300 hover:text-orange-600 mx-2">Comida</a>
+    <a href="{% url 'home' %}?categoria=sobremesa" class="text-gray-300 hover:text-orange-600 mx-2">Sobremesa</a>
+    <a href="{% url 'home' %}?categoria=drink" class="text-gray-300 hover:text-orange-600 mx-2">Drink</a>
+</nav>
 <section class="container mx-auto mt-8 p-4 flex justify-center">
     <form method="get" action="{% url 'pesquisar_receitas' %}"
         class="w-full max-w-lg flex bg-white rounded-full shadow-md overflow-hidden">

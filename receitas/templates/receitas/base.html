@@ -40,12 +40,16 @@ a página terá um fundo cinza claro e texto cinza escuro.-->
             </div>
             </div>
 
-            <nav class="ml-auto relative z-10">
+            <nav class="ml-auto relative z-10 flex space-x-4">
                 <a href="{% url 'home' %}" class="text-gray-300 hover:text-white mx-2">Home</a>
+                <!-- <a href="{% url 'home' %}?categoria=comida" class="text-gray-300 hover:text-white mx-2">Comida</a>
+                <a href="{% url 'home' %}?categoria=sobremesa" class="text-gray-300 hover:text-white mx-2">Sobremesa</a>
+                <a href="{% url 'home' %}?categoria=drink" class="text-gray-300 hover:text-white mx-2">Drink</a> -->
             </nav>
         </div>
     </header>
     <main class="container mx-auto p-6 mt-8 bg-white rounded-lg shadow-md">
+        
         {% block content %}{% endblock %}
     </main>
     <!-- Rodapé da página -->
