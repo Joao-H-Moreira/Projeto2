@@ -24,27 +24,26 @@ Delivery Network). -->
     <!--Este comando HTML e CSS significa que 
 a página terá um fundo cinza claro e texto cinza escuro.-->
     <!-- Cabeçalho da Página -->
-    <header class="bg-gray-900 text-white p-6 shadow-lg rounded-b-lg">
-            <nav class="ml-auto relative z-10 flex space-x-4">
-                <a href="{% url 'home' %}" class="text-gray-300 hover:text-white mx-2"> 🏡 Home</a>
-                <!-- <a href="{% url 'home' %}?categoria=comida" class="text-gray-300 hover:text-white mx-2">Comida</a>
-                <a href="{% url 'home' %}?categoria=sobremesa" class="text-gray-300 hover:text-white mx-2">Sobremesa</a>
-                <a href="{% url 'home' %}?categoria=drink" class="text-gray-300 hover:text-white mx-2">Drink</a> -->
-            </nav>
-        <div class="container mx-auto relative flex flex-col sm:flex-row items-center justify-center">
+    <header class="bg-gray-900 text-white h-[80px] p-6 shadow-lg rounded-b-lg">
+        <nav class="ml-2 relative z-10 items-center flex space-x-4">
+            <a href="{% url 'home' %}" class="text-gray-300 text-xl hover:text-orange-600 mx-2">
+                🏡 Home</a>
+        </nav>
+        <div class="container mx-auto relative h-fit flex flex-col sm:flex-row items-center justify-center">
             <!-- Alterado para 'justify-center' para centralizar o conteúdo -->
             <!-- Agrupamento para o Ícone e Título (Centralizado) -->
+            
             <div class="absolute inset-0 flex items-center justify-center">
-            <div class="flex items-center">
-                <div class="text-4xl mr-4">
-                    <i class="fas fa-utensils"></i> <!-- Ícone de utensílios (faca e garfo) -->
+                <div class="flex items-center">
+                    <div class="text-4xl mr-4">
+                        <i class="fas fa-utensils"></i> <!-- Ícone de utensílios (faca e garfo) -->
+                    </div>
+                    <!-- Título da Página -->
+                    <h1 class="text-3xl font-bold text-center sm:text-left">
+                        Minhas Receitas Deliciosas
+                    </h1>
                 </div>
-                <!-- Título da Página -->
-                <h1 class="text-3xl font-bold text-center sm:text-left">
-                    Minhas Receitas Deliciosas
-                </h1>
-            </div>
-            </div>
+            </div>            
         </div>
     </header>
     <main class="container mx-auto p-6 mt-8 bg-white rounded-lg shadow-md">
@@ -53,7 +52,7 @@ a página terá um fundo cinza claro e texto cinza escuro.-->
     </main>
     <!-- Rodapé da página -->
     <footer class="mt-12 p-6 text-center text-gray-600">
-        <p>&copy; 2025 Minhas Receitas. Todos os direitos reservados a João.</p>
+        <p>&copy; 2025 Minhas Receitas. Todos os direitos reservados a Emmanuel.</p>
     </footer>
 </body>
 
