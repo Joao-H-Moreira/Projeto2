@@ -128,3 +128,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 MEDIA_URL = 'media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media') #cria uma pasta 'media' na raiz do projeto
+
+EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
+EMAIL_FILE_PATH = BASE_DIR / 'emails'
