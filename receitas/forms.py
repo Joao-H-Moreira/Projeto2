@@ -21,6 +21,6 @@ class ContatoForm(forms.Form):
         widget=forms.Textarea(attrs={
             'class':'mt-1 block w-full p-2 bg-gray-700 border border-gray-600 rounded-md text-gray-100 focus:ring-orange-500 focus:border-orange-500',
             'rows':4,
-            'placehoder':'Sua mensagem...'
+            'placeholder':'Sua mensagem...'
         })
     )
